@@ -25,7 +25,7 @@ Graph::Graph(string fileName) {
   }
 
   // Initialize adjacency list
-  V = maxVertex + 1;
+  V = maxVertex;
   adjList.resize(V);
 
   // Populate adjacency list
@@ -41,4 +41,4 @@ Graph::Graph(string fileName) {
 Graph ::Graph() : V(0) { G.clear(); }
 
 
-}
+
