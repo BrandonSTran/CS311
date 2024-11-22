@@ -16,11 +16,11 @@ using namespace std;
 // object for holding city data
 
 struct City {
-  int id;
-  string code;
-  string name;
-  int population;
-  int altitude;
+  int id; //id of city
+  string code; //code of city
+  string name;  //name of city
+  int population; //population of city
+  int altitude; //
 };
 
 struct Vertex {
