@@ -26,28 +26,19 @@ Graph::Graph(string fileName) {
 
   // Initialize adjacency list
   V = maxVertex + 1;
-  G.resize(V);
+  adjList.resize(V);
 
   // Populate adjacency list
   for (const auto &[u, v, weight] : edges) {
-    G[u].push_back({v, weight});
+    adjList[u].push_back({v, weight});
     // Uncomment the following line if the graph is undirected:
     // G[v].push_back({u, weight});
   }
 
-  printList();
   file.close();
 }
 
 Graph ::Graph() : V(0) { G.clear(); }
 
-void Graph::printList() {
-  // Print the adjacency list
-  for (size_t i = 0; i < G.size(); ++i) {
-    cout << "Vertex " << i << ": ";
-    for (const auto &neighbor : G[i]) {
-      cout << "(ID: " << neighbor.ID << ", Weight: " << neighbor.weight << ") ";
-    }
-    cout << endl;
-  }
+
 }

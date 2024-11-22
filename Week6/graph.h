@@ -31,7 +31,7 @@ struct Vertex {
 class Graph {
 private:
   int V;                  // number of vertices
-  vector<list<Vertex>> G; // adjacency list
+  vector<list<Vertex>> adjList; // adjacency list
 
 public:
   // Purpose: constructor for adjacency list
