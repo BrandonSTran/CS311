@@ -3,6 +3,8 @@
 #include <iostream>
 #include <sstream>
 
+//overloaded constructor 
+//reads in file and populates adjacency list
 Graph::Graph(string fileName) {
   // Open the file
   ifstream file(fileName);
