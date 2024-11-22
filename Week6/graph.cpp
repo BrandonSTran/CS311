@@ -40,6 +40,8 @@ Graph::Graph(string fileName) {
   file.close();
 }
 
+//default graph constructor
+//initializes vertex count to 0 and clears the graph
 Graph ::Graph() : V(0) { G.clear(); }
 
 
